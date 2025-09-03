@@ -123,7 +123,8 @@ class AntGridEnv(gym.Env):
         if new_pos not in self.wall_pos and 0 <= x < self.size[0] and 0 <= y < self.size[1]:
             self.ant_pos = new_pos
         else:
-            reward -= 1.0  # Penalty for hitting a wall
+            reward -= 1.0  # Penalty for hitting a wall. if needed can increase the penalty
+            # terminated = True
 
         if not self.has_food:
             old_dist = np.linalg.norm(np.array(old_pos) - np.array(self.food_pos))
