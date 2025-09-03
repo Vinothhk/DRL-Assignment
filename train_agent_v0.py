@@ -15,7 +15,8 @@ class RenderCallback(BaseCallback):
         self.last_render_time = 0
 
     def _on_step(self) -> bool:
-        if self.n_calls % 10 == 0:
+        # if self.n_calls % 10 == 0:
+        if self.n_calls % 4 == 0:
             self.model.env.render()
             
             for event in pygame.event.get():
