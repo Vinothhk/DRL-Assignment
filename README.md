@@ -4,7 +4,8 @@ This repository contains code and resources for training, evaluating, and visual
 
 ## Demo
 
-<video src="media/antgrid.webm" controls width="600"></video>
+![Demo](media/antgrid.gif)
+
 
 ## Directory Structure
 
