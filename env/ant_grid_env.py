@@ -42,9 +42,9 @@ class AntGridEnv(gym.Env):
 
         self.images = None
         try:
-            ant_image = pygame.transform.scale(pygame.image.load('ant.jpeg'), (CELL_SIZE, CELL_SIZE))
-            home_image = pygame.transform.scale(pygame.image.load('home.png'), (CELL_SIZE, CELL_SIZE))
-            food_image = pygame.transform.scale(pygame.image.load('ant_food.jpeg'), (CELL_SIZE, CELL_SIZE))
+            ant_image = pygame.transform.scale(pygame.image.load('media/ant.jpeg'), (CELL_SIZE, CELL_SIZE))
+            home_image = pygame.transform.scale(pygame.image.load('media/home.png'), (CELL_SIZE, CELL_SIZE))
+            food_image = pygame.transform.scale(pygame.image.load('media/ant_food.jpeg'), (CELL_SIZE, CELL_SIZE))
             
             self.images = {
                 'ant': ant_image,
