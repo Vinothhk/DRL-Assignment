@@ -76,5 +76,5 @@ def evaluate_model(model_path: str, num_episodes: int = 5):
     
 if __name__ == '__main__':
     pygame.init()
-    evaluate_model("models/ppo_ant_grid.zip")
+    evaluate_model("archives/ppo_ant_grid.zip")
     pygame.quit()
